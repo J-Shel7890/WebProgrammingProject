@@ -10,13 +10,23 @@
 <body>
 
 <nav>
-    <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+
+        <div class="logo">
+            John Shelton
+        </div>
+
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <span class="nav-underline"></span>
+
+    </div>
 </nav>
 
 <header>
@@ -25,26 +35,35 @@
 
 <main>
 
-<section>
-    <h2>Schooling</h2>
-    <p>
-        I am currently attending Arkansas Tech University pursuing a major in
-		Information Technology with a focus on programming and database administration.
-        I am always looking for more education and experience, and plan on pursuing a degree 
-        in cybersecurity in the future.
-    </p>
-</section>
+<section class="education-timeline">
 
-<section>
-    <h2>Degrees and Certifications</h2>
-    <ul>
-       <li>Bachelor of Science in Information Technology - Expected in Spring 2027</li>
-       <li>Associate of Applied Science - Attained in Fall 2025</li>
-       <li>Certificate of Proficiency in Computer Programming - Attained in Fall 2025</li>
-    </ul>
+    <div class="edu">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p>Arkansas Tech University</p>
+        <p><strong>Expected:</strong> Spring 2027</p>
+        <p>
+            Focused on programming and database administration. Planning to pursue
+            cybersecurity studies in the future.
+        </p>
+    </div>
+
+    <div class="edu">
+        <h3>Associate of Applied Science in Information Technology</h3>
+        <p>Arkansas Tech University</p>
+        <p><strong>Completed:</strong> Fall 2025</p>
+    </div>
+
+    <div class="edu">
+        <h3>Certificate of Proficiency in Computer Programming</h3>
+        <p>Arkansas Tech University</p>
+        <p><strong>Completed:</strong> Fall 2025</p>
+    </div>
+
 </section>
 
 </main>
+
+<p id="datetime"></p>
 
 <script src="script.js"></script>
 </body>

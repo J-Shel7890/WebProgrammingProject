@@ -10,47 +10,74 @@
 <body>
 
 <nav>
-    <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+
+        <div class="logo">
+            John Shelton
+        </div>
+
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </div>
 </nav>
 
 <header>
     <h1>Skills</h1>
 </header>
 
-<main>
+<main class="skills-layout">
 
-<section>
-    <h2>Programming Languages</h2>
-    <ul>
-        <li>C++</li>
-        <li>JavaScript</li>
-        <li>SQL</li>
-        <li>HTML / CSS</li>
-        <li>React</li>
-        <li>NodeJS</li>
-        <li>TailwindCSS</li>
-		<li>Python</li>
-    </ul>
-</section>
+    <aside class="skills-summary">
+        <h2>Summary</h2>
+        <p>
+            I am an Information Technology student with experience in programming,
+            databases, and web development. I enjoy building efficient systems and
+            learning new technologies to improve my technical skillset.
+        </p>
+    </aside>
 
-<section>
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>Database design</li>
-        <li>Database management</li>
-        <li>Web development</li>
-        <li>Computer troubleshooting</li>
-        <li>Resource/Time management</li>
-    </ul>
-</section>
+    <div class="skills-content">
+
+        <section class="skill-box">
+            <h2>Programming Languages</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">C++</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">SQL</div>
+                <div class="skill-card">HTML / CSS</div>
+                <div class="skill-card">React</div>
+                <div class="skill-card">Python</div>
+            </div>
+
+            <span class="nav-underline"></span>
+
+        </section>
+
+        <section class="skill-box">
+            <h2>Technical Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">Database Design</div>
+                <div class="skill-card">Web Development</div>
+                <div class="skill-card">Troubleshooting</div>
+                <div class="skill-card">Time Management</div>
+                <div class="skill-card">Hardware <br> Setup</div>
+                <div class="skill-card">Software <br>  Setup</div>
+            </div>
+        </section>
+
+    </div>
 
 </main>
+
+<p id="datetime"></p>
 
 <script src="script.js"></script>
 </body>

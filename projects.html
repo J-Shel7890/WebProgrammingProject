@@ -10,13 +10,23 @@
 <body>
 
 <nav>
-    <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+
+        <div class="logo">
+            John Shelton
+        </div>
+
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <span class="nav-underline"></span>
+
+    </div>
 </nav>
 
 <header>
@@ -27,26 +37,70 @@
 
 <section>
     <h2>Past Projects</h2>
-    <p>
-        mySQL Database Management - 2025 - Set up and managed a large sql database. Created efficient views
-        and queries to simplify and inventory employee management.
-    </p>
 
-    <p>
-        Snake Game created in Python - 2025 - Coded a program in Python that resembled the
-        classic game Snake with a menu and end game screen.
-    </p>
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>C++ Battle Simulator</h3>
+            <p><strong>Year:</strong> 2024</p>
+            <p>
+                Using C++, I created a basic game that simulated a fantasy battle that allowed the user
+                to input the action they would like to take. It keeps track of values and statistics in
+                order to determine the outcome of the battle.
+            </p>
+        </div>
+        
+        <div class="project-card">
+            <h3>mySQL Database Management</h3>
+            <p><strong>Year:</strong> 2025</p>
+            <p>
+                Set up and managed a large SQL database. Created efficient views
+                and queries to simplify employee management.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Snake Game (Python)</h3>
+            <p><strong>Year:</strong> 2025</p>
+            <p>
+                Using Python and a few Python modules, I created a game resembling the classic Snake game
+                complete with a menu and end screen.
+            </p>
+        </div>
+
+    </div>
 </section>
 
 <section>
     <h2>Current Projects</h2>
-    <p>
-        Oracle Database Management - 2026 - Managed a database in Oracle21c with a focus on 
-        user creation/management, permissions, and backups.
-    </p>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Oracle Database Management</h3>
+            <p><strong>Year:</strong> 2026</p>
+            <p>
+                Managed Oracle 21c database with a focus on user creation,
+                permissions, and backups. Also worked with GoldenGate to replicate data
+                between two databases.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Web Portfolio (This Site)</h3>
+            <p><strong>Year:</strong> 2026</p>
+            <p>
+                Developed a multi-page portfolio website using HTML, CSS,
+                and JavaScript.
+            </p>
+        </div>
+
+    </div>
 </section>
 
 </main>
+
+<p id="datetime"></p>
 
 <script src="script.js"></script>
 </body>
